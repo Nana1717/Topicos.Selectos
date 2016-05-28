@@ -40,8 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dominio\Acciones\Suma.cs" />
+    <Compile Include="Dominio\Especificaciones\RealizarCalculo.cs" />
+    <Compile Include="Dominio\Validaciones\ValidarBase.cs" />
+    <Compile Include="Dominio\Validaciones\ValidarNumero.cs" />
     <Compile Include="Numero.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dominio\Repositorios\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
