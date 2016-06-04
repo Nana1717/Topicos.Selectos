@@ -19,6 +19,18 @@ namespace Core.Numero
             }
         }
 
+        // override object.Equals
+        public override bool Equals(object obj)
+        {
+            Numero other = obj as Numero;
+            if (other == null)
+            {
+                return false;
+            }
+            return (this.elNumero == other.elNumero) &&
+                (this.laBase == other.laBase);
+        }
+
         public double elNumeroEnDecimal
         {
             get
