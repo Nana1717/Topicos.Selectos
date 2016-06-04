@@ -31,16 +31,12 @@ namespace Wcf.Calculadora
             return composite;
         }
 
-        Numero IMiCalculadora.RealizarOperacionBinaria(char elOperador, Numero elPrimerNumero, Numero elSegundoNumero)
-        {
-            throw new NotImplementedException();
-        }
-
-        Numero RealizarOperadorBinario(char elOperador, Numero elPrimerNumero, Numero elSegundoNumero)
+        public Numero RealizarOperacionBinaria(char elOperador, Numero elPrimerNumero, Numero elSegundoNumero)
         {
             var laReferencia = new Core.Numero.Dominio.Especificaciones.RealizarCalculo();
             Numero elResultado = laReferencia.OperadorBinario(elOperador, elPrimerNumero, elSegundoNumero);
             return (elResultado);
         }
+
     }
 }
